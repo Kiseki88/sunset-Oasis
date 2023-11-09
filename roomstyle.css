@@ -1,0 +1,245 @@
+/* Styling for room cards */
+.room-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.room-card {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    overflow: hidden;
+}
+
+.room-card img {
+    width: 300px;
+    object-fit: cover;
+    height: 300px;
+   
+    transition: transform 0.3s;
+}
+
+.room-card .room-info {
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px;
+    transform: translateY(100%);
+    transition: transform 0.3s;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+.room-card:hover img {
+    transform: scale(1.1);
+}
+
+.room-card:hover .room-info {
+    transform: translateY(0);
+    opacity: 1;
+    height: auto;
+    overflow: visible;
+}
+
+
+/* Styling for the gallery container */
+.gallery-container {
+    margin: 20px;
+    padding: 10px;
+}
+
+/* Style for gallery images */
+.mySlides {
+    display: none;
+}
+
+/* Next and previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Image text */
+.caption-container {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 2px 16px;
+    color: white;
+}
+
+/* Thumbnail images */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.column {
+    flex: 25%;
+    padding: 5px;
+}
+
+.column img {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.column img:hover {
+    opacity: 1;
+}
+
+
+
+/*Room Gallary*/
+
+/* Styling for custom room cards */
+.custom-room-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #f7f7f7;
+    position: relative;
+    cursor: pointer;
+}
+
+.custom-room-card .room-img img {
+    width: 100%;
+    height: 300px;
+}
+
+.custom-room-card .room-info {
+    padding: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.252);
+    position: absolute;
+    bottom: -100%; /* Initially hidden */
+    left: 0;
+    right: 0;
+    transition: bottom 0.65s;
+    opacity: 0; /* Initially hidden */
+}
+
+.custom-room-card h3 {
+    color: white;
+    font-size: 20px;
+    margin: 0;
+}
+
+.custom-room-card p {
+    color: #ffffff;
+}
+
+.custom-room-card .room-price {
+    font-weight: 600;
+}
+
+.custom-room-card .btn-primary {
+    background-color: #007BFF;
+}
+
+/* Sliding animation on hover */
+.custom-room-card:hover .room-info {
+    bottom: 0; /* Show on hover */
+    opacity: 1; /* Show on hover */
+}
+
+
+/*Booking Form*/
+
+
+.booking-form {
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+   
+}
+
+.form-column {
+    flex: 2 ;
+    min-width: 80%;
+    padding: 0px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="date"],
+select,
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+    .form-section button {
+        display: inline-block;
+        position: relative;
+        top: 20px;
+        width: 100%;
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+.booking-form .form-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.booking-form .form-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.booking-form .form-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}

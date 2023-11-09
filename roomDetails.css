@@ -1,0 +1,365 @@
+/* styles.css */
+
+/* Container for room details */
+.room-details-container {
+   
+
+
+    margin: 20px;
+    padding: 20px;
+}
+
+/* Room Details Content */
+
+
+
+
+
+
+.room-details-content {
+    flex: 1;
+}
+
+.room-details-content h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.room-category {
+    color: #777;
+    font-size: 30px;
+}
+
+.room-image img {
+    align-self: center;
+    max-width: 100%;
+    height: 500px;
+    opacity: 0.8;
+}
+
+.roomC-card img {
+    height: 300px;
+    max-width: 100%;
+    margin-top: 20px;
+}
+
+
+
+
+/* Room Pricing */
+.room-pricing {
+    text-align: center;
+}
+
+
+.fa {
+    margin-right: 10px;
+}
+
+
+
+
+
+/* Container Styles */
+.custom-availability-calendar-container {
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 80%;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+}
+
+/* Header Styles */
+.custom-availability-calendar-container h4 {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Month Selector Styles */
+.custom-select-month {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Legend Styles */
+.custom-legend-div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.custom-legend {
+    display: flex;
+    align-items: center;
+}
+
+.custom-legend-status {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.custom-available {
+    background-color: #d0c9c9; /* Green color for "Available" */
+}
+
+.custom-not-available {
+    background-color: #F44336; /* Red color for "Not Available" */
+}
+
+.custom-legend-label {
+    font-weight: bold;
+}
+
+/* Custom Dates Styles */
+.custom-dates {
+    display: flex;
+    justify-content: space-between;
+}
+
+.custom-dates-column {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.custom-dates-header {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.custom-dates-list {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* Create 7 columns for days */
+    gap: 10px; /* Adjust the gap between items */
+    list-style: none;
+    
+    padding: 5px;
+}
+
+.custom-dates-list li {
+    
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #ccc;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+/* Wrap every four rows */
+.custom-dates-list li:nth-child(31) {
+    grid-column: span 1; /* Span across all 7 columns */
+}
+
+
+
+/* Add this CSS to your stylesheet */
+/*Booking Form*/
+
+.booking-container {
+    width: 100%;
+    height: 150px;
+    background-color: #eee;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.booking-form {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+
+.form-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-control {
+    
+    width: 100%;
+    padding: 50px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.select-arrow {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #000;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+}
+
+#prodetails{
+    display: flex;
+    margin-top: 20px;
+}
+
+#prodetails .single-pro-image{
+    width: 40%;
+    margin-right: 50px;
+}
+.small-img-group{
+    display: flex;
+    justify-content: space-between;
+}
+.smaill-img-col{
+    flex-basis: 24%;
+    cursor: pointer;
+}
+#prodetails .single-pro-details{
+    width: 50%;
+    padding-top: 30px;
+}
+#prodetails .single-pro-details h4{
+    padding: 40px 0 20px 0;
+}
+
+#prodetails .single-pro-details h2{
+     font-size: 26px;
+}
+#prodetails .single-pro-details select{
+    display: block;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+#prodetails .single-pro-details input{
+    width: 50px;
+    height: 47px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+.single-pro-details h6{
+    font-size: 20px;
+}
+.single-pro-details h4{
+    font-size: 30px;
+}
+.single-pro-details span{
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.single-pro-details button {
+    background-color: #ee1c47;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.single-pro-details button:hover {
+    background-color: #d1163a;
+}
+
+/* Styles for the input element */
+.single-pro-details input[type="number"] {
+    width: 60px;
+    height: 40px;
+    padding: 5px 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.single-pro-details input[type="number"]:focus {
+    border-color: #ee1c47;
+}
+
+@media (max-width: 768px) {
+    #prodetails {
+        flex-direction: column;
+        align-items: center;
+    }
+    .single-pro-image {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .single-pro-details {
+        width: 100%;
+    }
+}
+
+/* Responsive styles for single product details */
+@media (max-width: 768px) {
+    .single-pro-details h4 {
+        padding-top: 20px;
+    }
+    .single-pro-details h2 {
+        font-size: 22px;
+    }
+    .single-pro-details select {
+        margin-bottom: 8px;
+    }
+    .single-pro-details input[type="number"] {
+        width: 50px;
+    }
+}
+
+/* Responsive styles for small image group */
+@media (max-width: 768px) {
+    .small-img-group {
+        display: flex;
+        justify-content: center;
+    }
+    .smaill-img-col {
+        flex-basis: auto;
+        margin-bottom: 10px;
+    }
+    .smaill-img-col img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .product-heading {
+        padding: 30px 10%;
+    }
+    .heading-text h1 {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+}

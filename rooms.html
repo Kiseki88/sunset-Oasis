@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="roomstyle.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="script.js"></script>
+    <!-- Add Bootstrap CSS and JavaScript links here -->
+</head>
+<body>
+   
+   
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <!-- Brand and toggle button wrapper -->
+          <a class="navbar-brand" href="#">
+            <img src="HeadLogo.png" alt="Hotel Logo" width="200" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- Navbar items -->
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html" style="color: black;">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="rooms.html"  style="color: black;">Rooms</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="aboutUs.html"  style="color: black;">AboutUs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="service.html"  style="color: black;">Services</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav">
+              <li class="nav-item text-black" >
+                <a class="nav-link" href="signIn.html" style="color: black;">Sign In</a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link" href="#">
+                  <img
+                    src="ratDude.webp"
+                    alt="Profile Image"
+                    class="rounded-image"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+        <div class="loader"></div>
+        
+
+        <div class="banner " style="background-image: url(https://tourisminmyanmar.com.mm/wp-content/uploads/2020/03/Inle-lake.jpg); background-position: center; background-position-x: auto; ">
+            <div class="container text-center">
+                <img src="LogoWhite1.png" alt="Hotel Logo" width="200">
+            </div>
+        </div>
+    
+        <!-- Room Cards using Bootstrap grid system -->
+        <section id="room-cards" class="section-p1 mt-5">
+            <div class="container">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
+                    <div class="col mb-4">
+                        <div class="room-card">
+                            <div class="room-img">
+                                <img src="LuxeryRoom.jpg"alt="Room 1" class="img-fluid">
+                                <div class="room-info">
+                                    <h3 style="color: rgb(235, 235, 217);">Deluxe Room</h3>
+                                    <p style="color: rgb(235, 235, 217);">Spacious room with a beautiful view. Perfect for a relaxing stay.</p>
+                                    <span class="room-price" style="color: rgb(235, 235, 217);">$200 per night</span>
+                                    <a href="roomDetails.html" class="btn btn-primary mt-2" onclick="reserve()">Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-4">
+                        <div class="room-card">
+                            <div class="room-img">
+                                <img src="SingleBed.jpg" alt="Room 2" class="img-fluid">
+                                <div class="room-info">
+                                    <h3 style="color: rgb(235, 235, 217);">Single Bed Room</h3>
+                                    <p style="color: rgb(235, 235, 217);">Cozy room with a comfortable single bed. Ideal for solo travelers.</p>
+                                    <span class="room-price" style="color: rgb(235, 235, 217);">$50 per night</span>
+                                    <a href="roomDetails.html" class="btn btn-primary mt-2" onclick="reserve()">Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-4">
+                        <div class="room-card">
+                            <div class="room-img">
+                                <img src="DoubleBed.jpg" alt="Room 3" class="img-fluid">
+                                <div class="room-info">
+                                    <h3 style="color: rgb(235, 235, 217);">Double Bed Room</h3>
+                                    <p style="color: rgb(235, 235, 217);">Comfortable room with a double bed. Perfect for couples.</p>
+                                    <span class="room-price" style="color: rgb(235, 235, 217);">$100 per night</span>
+                                    <a href="roomDetails.html" class="btn btn-primary mt-2" onclick="reserve()">Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-4">
+                        <div class="room-card">
+                            <div class="room-img">
+                                <img src="FamilyRoom.jpg" alt="Room 4" class="img-fluid">
+                                <div class="room-info">
+                                    <h3 style="color: rgb(235, 235, 217);">Family Room</h3>
+                                    <p style="color: rgb(235, 235, 217);">Spacious room for families with a lovely view. Enjoy your stay with loved ones.</p>
+                                    <span class="room-price" style="color:rgb(235, 235, 217);">$150 per night</span>
+                                    <a href="roomDetails.html" class="btn btn-primary mt-2" onclick="reserve()">Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add more room cards here (use col mb-4 for each card) -->
+                </div>
+            </div>
+        </section>
+    
+        <!-- Booking Form with Bootstrap classes -->
+        <div class="container mt-5">
+            <div class="booking-form">
+                <h2 style="color: rgb(28, 31, 76);">Hotel Booking</h2>
+                <form>
+                    <div class="row">
+                        <div class="form-section col-md-3">
+                            <label for="room">Choose Hotel Room:</label>
+                            <select id="room" name="room" class="form-control">
+                                <option value="standard">Standard Room</option>
+                                <option value="deluxe">Deluxe Room</option>
+                                <option value="suite">Suite</option>
+                            </select>
+                        </div>
+                        <div class="form-section col-md-3">
+                            <label for="arrival">Arrival Date:</label>
+                            <input type="date" id="arrival" name="arrival" class="form-control" required>
+                        </div>
+                        <div class="form-section col-md-3">
+                            <label for="departure">Departure Date:</label>
+                            <input type="date" id="departure" name="departure" class="form-control" required>
+                        </div>
+                        <div class="form-section col-md-1">
+                            <label for="adults">Adults:</label>
+                            <input type="number" id="adults" name="adults" class="form-control" min="1" value="1">
+                        </div>
+                        <div class="form-section col-md-1">
+                            <label for="children">Children:</label>
+                            <input type="number" id="children" name="children" class="form-control" min="0" value="0">
+                        </div>
+                        <div class="form-section col-md-1">
+                            <button type="submit" class="btn btn-primary"><a href="roomSearch.html" style="text-decoration: none; color: white;">Search</a></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    
+        <!-- Hotel Gallery Section with Bootstrap classes -->
+        <section id="hotel-gallery" class="section-p1 mt-5">
+            <div class="container">
+                <h2 class="text-center mb-4" style="color: rgb(28, 31, 76);">Hotel Gallery</h2>
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
+                    <div class="col mb-4">
+                        <div class="custom-room-card">
+                            <div class="room-img">
+                                <img src="iamges/L1.jpg" alt="Room 5" class="img-fluid">
+                            </div>
+                            <div class="room-info">
+                                <h3>Bedromm View</h3>
+                                <p>Our elegant Bedromm view you to a world of comfort and luxury.</p>
+                         
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-4">
+                        <div class="custom-room-card">
+                            <div class="room-img">
+                                <img src="Lobby1.jpg" alt="Room 5" class="img-fluid">
+                            </div>
+                            <div class="room-info">
+                                <h3>Lobby</h3>
+                                <p>Our elegant lobby welcomes you to a world of comfort and luxury.</p>
+                       
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-4">
+                        <div class="custom-room-card">
+                            <div class="room-img">
+                                <img src="View2W.jpg" alt="Room 6" class="img-fluid">
+                            </div>
+                            <div class ="room-info">
+                                <h3>Inle-lake View</h3>
+                                <p>Enjoy a breathtaking view from our hotel's prime location.</p>
+                          
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add more room cards here (use col mb-4 for each card) -->
+                    <div class="col mb-4">
+                        <div class="custom-room-card">
+                            <div class="room-img">
+                                <img src="lobby2.jpg" alt="Room 5" class="img-fluid">
+                            </div>
+                            <div class="room-info">
+                                <h3>Inle-lake View</h3>
+                                <p>Enjoy a breathtaking view from our hotel's prime location.</p>
+                          
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-4">
+                        <div class="custom-room-card">
+                            <div class="room-img">
+                                <img src="poolview.jpg" alt="Room 5" class="img-fluid">
+                            </div>
+                            <div class="room-info">
+                                <h3>Lobby</h3>
+                                <p>Our elegant lobby welcomes you to a world of comfort and luxury.</p>
+                               
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-4">
+                        <div class="custom-room-card">
+                            <div class="room-img">
+                                <img src="lob3.jpg" alt="Room 5" class="img-fluid">
+                            </div>
+                            <div class="room-info">
+                                <h3>Lobby</h3>
+                                <p>Our elegant lobby welcomes you to a world of comfort and luxury.</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+            </ul>
+            <p class="text-center text-body-secondary">© 2023 Company, Inc</p>
+          </footer>
+    
+
+    <!-- Your additional homepage content goes here -->
+
+    <script src="script.js"></script>
+</body>
+</html>

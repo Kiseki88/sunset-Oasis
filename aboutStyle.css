@@ -1,0 +1,27 @@
+/* Initially hide all animated sections */
+.animated-section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s, transform 1s;
+}
+
+/* Define animation for each section with a delay */
+#ourstory-animated.animated-section {
+    animation: fadeIn 1s ease-in-out 0.5s forwards;
+}
+
+#ourMission-animated.animated-section {
+    animation: fadeIn 1s ease-in-out 2s forwards;
+}
+
+/* Keyframes for the fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

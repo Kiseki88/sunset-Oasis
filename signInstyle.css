@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Hide scrollbars */
+    font-family: Arial, sans-serif;
+}
+
+.sign-in-container {
+    display: flex;
+    height: 100vh; /* Full viewport height */
+}
+
+.image-container {
+    flex: 1;
+    background-image: url("cover.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+}
+
+.image-container img {
+    width: 100%; /* Take up the full width of the container */
+    height: 100vh; /* Take up full viewport height */
+    object-fit: cover; /* Ensure the image covers the container */
+}
+
+.user-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.user-content h2 {
+    margin: 0;
+}
+
+.user-content form {
+    width: 80%;
+    max-width: 400px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Add additional styles as needed */
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#remember {
+    margin-right: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
